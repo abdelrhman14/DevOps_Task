@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqlserver-db-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sqlserver-db
+  minReadySeconds: 5
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: sqlserver-db
+    spec:
+      containers:
+        - name: sqlserver-db-deployment
+          image: mcr.microsoft.com/mssql/server
+          ports:
+            - containerPort: 1433
+          env:
+            - name: "ACCEPT_EULA"
+              value: "Y"
+            - name: "SA_PASSWORD"
+              value: "Password_123"
+            - name: "MSSQL_PID"
+              value: "Express"

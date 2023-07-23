@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dotnet_app
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: dotnet_app
+        tier: frontend
+    spec:
+      containers:
+        - name: myapp-frontend
+          image: public.ecr.aws/o0k2y0g4/devops:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: DEVELOPMENT
+            - name: SQLSERVER_CONNECTIONSTRING
+              value: "Server=sql-db-service.default.svc.cluster.local;Database=dotnet;User=sa;Password=example_123;MultipleActiveResultSets=true;"            
