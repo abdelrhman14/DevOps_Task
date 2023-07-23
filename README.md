@@ -44,7 +44,7 @@
 	
 	Private key: You should now be able to access the instance using the private key from the same key pair as used to create the instance 
 
-	![ssh](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/899faaa6-ead4-4630-9e7d-6a1be9eecc76)
+![ssh](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/899faaa6-ead4-4630-9e7d-6a1be9eecc76)
 
 	A highly available architecture that spans two Availability Zones. * 
 	
@@ -108,29 +108,29 @@ So finally, Accessing Private EKS Cluster From Bastion Host (EC2)
 Deploy Your Application on Kubernetes 
 	Deploy your application with the deployments 
 	
-	![deploy_app](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/b4e78b56-4bc8-4e25-8b9e-40bb3ec602e3)
+![deploy_app](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/b4e78b56-4bc8-4e25-8b9e-40bb3ec602e3)
 
 Deploy the Database 
 	Create a deployment for SQL Server and Redis  
 	
-	![deploy_database](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/0e5e6e75-8422-4103-a5bb-76764948e5f5)
+![deploy_database](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/0e5e6e75-8422-4103-a5bb-76764948e5f5)
 
 Kubernetes Volume and Secret Database Information 
 	Database is not persistent so, 
 	There are many of type that make persistent data one of them: 
 	Host Path Persistent Volume 
 	
-	![pv](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/22d1035b-73d7-46d7-8e17-904d14b20fe8)
+![pv](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/22d1035b-73d7-46d7-8e17-904d14b20fe8)
 
 
 
 Another problem that we can solve now is the storage of sensitive data in a Kubernetes cluster, like the password to access our database. To do this, Kubernetes provides a tool known as a secret, which we already glimpsed when we talked about the token to access the Kubernetes Dashboard. 
 	
-	![secret](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/a5fdcc10-0d94-4270-98e5-537754de1739)
+![secret](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/a5fdcc10-0d94-4270-98e5-537754de1739)
 
 Create an External Load Balancer 
 	you have the option of automatically creating a cloud load balancer. This provides 
 	an externally accessible IP address that sends traffic to the correct port on your cluster 
 	nodes, provided your cluster runs in a supported environment and is configured with the correct cloud load balancer provider package. 
-	![LB](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/029ea3de-e43a-4b5b-b837-03524739e04a)
+![LB](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/029ea3de-e43a-4b5b-b837-03524739e04a)
 
