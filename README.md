@@ -1,23 +1,23 @@
 # DevOps_Task
 1- Network Infrastrcture with Terraform 
 
-Infrastructure Network Terraform 
-
-Create Virtual private Cloud (VPC) 
-
-Create Four Subnet 
-
-Two Public Subnet 
-
-Two Private Subnet 
-
-Create Router Table 
-
-Create Route Table Association 
-
-Create Internet Gateway 
-
-Create Nat Gateway
+	Infrastructure Network Terraform 
+	
+	Create Virtual private Cloud (VPC) 
+	
+	Create Four Subnet 
+	
+	Two Public Subnet 
+	
+	Two Private Subnet 
+	
+	Create Router Table 
+	
+	Create Route Table Association 
+	
+	Create Internet Gateway 
+	
+	Create Nat Gateway
 
 ====================================================================================
 image
