@@ -102,8 +102,11 @@ So finally, Accessing Private EKS Cluster From Bastion Host (EC2)
 	`docker tag devops:latest public.ecr.aws/o0k2y0g4/devops:latest` 
 	
 	Run the following command to push this image to your newly created AWS repository: 
-	
+
 	`docker push public.ecr.aws/o0k2y0g4/devops:latest` 
+
+	![Screenshot 2023-07-23 ECR](https://github.com/abdelrhman14/DevOps_Task/assets/42601017/3b11c4ad-6f53-4d4f-8311-85290aee42ba)
+
 
 Deploy Your Application on Kubernetes 
 	Deploy your application with the deployments 
